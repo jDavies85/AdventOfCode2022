@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Puzzles\Day01CalorieCounting\input_01.txt" />
+    <None Remove="Puzzles\Day02RockPaperScissors\input_02.txt" />
+    <None Remove="Puzzles\Day03RucksackReorganization\input_03.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Puzzles\Day01CalorieCounting\input_01.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Puzzles\Day02RockPaperScissors\input_02.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Puzzles\Day03RucksackReorganization\input_03.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
