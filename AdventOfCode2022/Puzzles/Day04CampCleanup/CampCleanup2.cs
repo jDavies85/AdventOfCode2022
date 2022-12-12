@@ -1,10 +1,10 @@
 ﻿namespace AdventOfCode2022.Puzzles.Day04CampCleanup
 {
-    public class CampCleanup : IAdventPuzzle
+    public class CampCleanup2 : IAdventPuzzle
     {
         public string GetName()
         {
-            return "Camp Cleanup Part 1";
+            return "Camp Cleanup Part 2";
         }
 
         public void Run()
@@ -16,11 +16,11 @@
             foreach (var line in input)
             {
                 var assignmentPair = CampCleanupHelper.GetAssignmentPair(line);
-                if (assignmentPair[0].IsFullyContainedIn(assignmentPair[1]) || assignmentPair[1].IsFullyContainedIn(assignmentPair[0]))
+                if (assignmentPair[0].DoesOverlap(assignmentPair[1]))
                     total++;
             }
 
-            Console.WriteLine($"There are {total} cases where one assignment pair fully contains the other");
+            Console.WriteLine($"There are {total} cases where one assignment overlaps the other");
         }
     }
 }
