@@ -2,6 +2,7 @@
 using AdventOfCode2022.Puzzles.Day02RockPaperScissors;
 using AdventOfCode2022.Puzzles.Day03RucksackReorganization;
 using AdventOfCode2022.Puzzles.Day04CampCleanup;
+using AdventOfCode2022.Puzzles.Day05SupplyStacks;
 
 Dictionary<int, IAdventPuzzle> directory = new Dictionary<int, IAdventPuzzle>
 {
@@ -13,6 +14,8 @@ Dictionary<int, IAdventPuzzle> directory = new Dictionary<int, IAdventPuzzle>
     { 6, new RucksackReorganization2() },
     { 7, new CampCleanup() },
     { 8, new CampCleanup2() },
+    { 9, new SupplyStacks() },
+    { 10, new SupplyStacks2() },
 };
 
 Console.WriteLine("Select a puzzle to run:");
@@ -21,7 +24,6 @@ foreach (var puzzle in directory)
 {
     Console.WriteLine($"{puzzle.Key}: {puzzle.Value.GetName()}");
 }
-
 var index = Convert.ToInt32(Console.ReadLine());
 directory[index].Run();
 Console.ReadLine();

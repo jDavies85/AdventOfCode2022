@@ -12,6 +12,7 @@
     <None Remove="Puzzles\Day02RockPaperScissors\input_02.txt" />
     <None Remove="Puzzles\Day03RucksackReorganization\input_03.txt" />
     <None Remove="Puzzles\Day04CampCleanup\input_04.txt" />
+    <None Remove="Puzzles\Day05SupplyStacks\input_05.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +26,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Puzzles\Day04CampCleanup\input_04.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Puzzles\Day05SupplyStacks\input_05.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
