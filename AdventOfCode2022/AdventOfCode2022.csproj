@@ -16,6 +16,13 @@
     <None Remove="Puzzles\Day06TuningTrouble\input_06.txt" />
     <None Remove="Puzzles\Day07NoSpaceLeftOnDevice\input_07.txt" />
     <None Remove="Puzzles\Day08TreetopTreeHouse\input_08.txt" />
+    <None Remove="Puzzles\Day09RopeBridge\input_09.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Puzzles\Day09RopeBridge\input_09.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
