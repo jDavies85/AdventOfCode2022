@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Puzzles\Day09RopeBridge\input_09.txt">
+    <Content Include="Puzzles\Day09RopeBridge\input_09.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
