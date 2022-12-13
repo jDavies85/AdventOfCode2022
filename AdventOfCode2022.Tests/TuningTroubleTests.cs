@@ -1,10 +1,4 @@
 ﻿using AdventOfCode2022.Puzzles.Day06TuningTrouble;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode2022.Tests
 {

@@ -10,10 +10,14 @@
 
   <ItemGroup>
     <None Remove="TestInput\input_07_test_input_1.txt" />
+    <None Remove="TestInput\input_08_test_input_1.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="TestInput\input_07_test_input_1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestInput\input_08_test_input_1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
