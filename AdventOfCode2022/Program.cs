@@ -4,6 +4,7 @@ using AdventOfCode2022.Puzzles.Day03RucksackReorganization;
 using AdventOfCode2022.Puzzles.Day04CampCleanup;
 using AdventOfCode2022.Puzzles.Day05SupplyStacks;
 using AdventOfCode2022.Puzzles.Day06TuningTrouble;
+using AdventOfCode2022.Puzzles.Day07NoSpaceLeftOnDevice;
 
 Dictionary<int, IAdventPuzzle> directory = new Dictionary<int, IAdventPuzzle>
 {
@@ -19,6 +20,8 @@ Dictionary<int, IAdventPuzzle> directory = new Dictionary<int, IAdventPuzzle>
     { 10, new SupplyStacks2() },
     { 11, new TuningTrouble() },
     { 12, new TuningTrouble2() },
+    { 13, new NoSpaceLeftOnDevice() },
+    { 14, new NoSpaceLeftOnDevice2() },
 };
 
 Console.WriteLine("Select a puzzle to run:");
