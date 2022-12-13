@@ -15,6 +15,7 @@
     <None Remove="Puzzles\Day05SupplyStacks\input_05.txt" />
     <None Remove="Puzzles\Day06TuningTrouble\input_06.txt" />
     <None Remove="Puzzles\Day07NoSpaceLeftOnDevice\input_07.txt" />
+    <None Remove="Puzzles\Day08TreetopTreeHouse\input_08.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +38,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Puzzles\Day07NoSpaceLeftOnDevice\input_07.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Puzzles\Day08TreetopTreeHouse\input_08.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
