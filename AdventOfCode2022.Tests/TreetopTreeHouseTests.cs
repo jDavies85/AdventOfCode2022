@@ -181,5 +181,29 @@ namespace AdventOfCode2022.Tests
 
             Assert.AreEqual(21, TreetopTreeHouseHelper.CountVisibleTrees(map));
         }
+
+        [TestMethod]
+        public void Given_A_Tree_At_Y_1_And_X_2_Scenic_Score_Is_4()
+        {
+            var input = File.ReadAllLines("./TestInput/input_08_test_input_1.txt");
+            var x = input[0].Length;
+            var y = input.Length;
+            var map = TreetopTreeHouseHelper.CreateMap(x, y, input);
+            var scenicScore = TreetopTreeHouseHelper.GetScenicScore(1, 2, map);
+
+            Assert.AreEqual(4, scenicScore);
+        }
+
+        [TestMethod]
+        public void Given_A_Tree_At_Y_3_And_X_2_Scenic_Score_Is_8()
+        {
+            var input = File.ReadAllLines("./TestInput/input_08_test_input_1.txt");
+            var x = input[0].Length;
+            var y = input.Length;
+            var map = TreetopTreeHouseHelper.CreateMap(x, y, input);
+            var scenicScore = TreetopTreeHouseHelper.GetScenicScore(3, 2, map);
+
+            Assert.AreEqual(8, scenicScore);
+        }
     }
 }

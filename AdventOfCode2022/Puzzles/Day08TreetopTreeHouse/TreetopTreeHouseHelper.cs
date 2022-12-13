@@ -91,5 +91,56 @@
 
             return visibleTrees;
         }
+
+        public static int GetScenicScore(int y, int x, int[][] map)
+        {
+            int maxY = map.Length-1;
+            int maxX = map[0].Length-1;
+
+            int treeHeight = map[y][x];
+
+            int up = 0;
+            int down = 0;
+            int left = 0;
+            int right = 0;
+
+            for (int i = y-1; i >= 0; i--)
+            {
+                up++;
+                if (map[i][x] >= treeHeight)
+                {
+                    break;
+                }
+            }
+
+            for (int i = y+1; i <= maxY; i++)
+            {
+                down++;
+                if (map[i][x] >= treeHeight)
+                {
+                    break;
+                }
+            }
+
+            for (int i = x-1; i >= 0; i--)
+            {
+                left++;
+                if (map[y][i] >= treeHeight)
+                {
+                    break;
+                }
+            }
+
+            for (int i = x+1; i <= maxX; i++)
+            {
+                right++;
+                if (map[y][i] >= treeHeight)
+                {
+                    break;
+                }
+            }
+
+            return (up * down * left * right);
+        }
     }
 }
